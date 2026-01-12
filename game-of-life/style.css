@@ -1,0 +1,54 @@
+:root {
+  --bg: #222;
+  --live-cell: #4CAF50; /* Green for living cells */
+  --dead-cell: #333;
+  --btn-bg: #555;
+  --btn-hover: #777;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+canvas {
+  background-color: var(--dead-cell);
+  border: 1px solid var(--live-cell);
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover { background-color: var(--btn-hover); }
+
+.status {
+  padding: 10px 15px;
+  background-color: var(--btn-bg);
+  border-radius: 4px;
+}
