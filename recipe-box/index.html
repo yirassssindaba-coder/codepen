@@ -1,0 +1,30 @@
+<div class="container">
+  <header>
+    <h1>Recipe Box</h1>
+    <button class="btn btn-add" onclick="openModal()">Add Recipe</button>
+  </header>
+
+  <div id="recipe-list" class="recipe-list">
+    <!-- Resep akan muncul di sini -->
+  </div>
+
+  <!-- Modal untuk Add/Edit -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Add New Recipe</h2>
+      <input type="hidden" id="editIndex">
+      <div class="form-group">
+        <label>Recipe Name</label>
+        <input type="text" id="recipeName" placeholder="e.g. Nasi Goreng">
+      </div>
+      <div class="form-group">
+        <label>Ingredients (separated by commas)</label>
+        <textarea id="recipeIngredients" placeholder="e.g. Rice, Garlic, Egg, Soy Sauce"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-save" onclick="saveRecipe()">Save</button>
+        <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
