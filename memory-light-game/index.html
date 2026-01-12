@@ -1,0 +1,41 @@
+<div class="main-container">
+  <div class="game-circle">
+    <!-- Tombol Warna -->
+    <div class="pad green" id="0" onclick="playerClick(0)"></div>
+    <div class="pad red" id="1" onclick="playerClick(1)"></div>
+    <div class="pad yellow" id="2" onclick="playerClick(2)"></div>
+    <div class="pad blue" id="3" onclick="playerClick(3)"></div>
+    
+    <!-- Panel Kontrol Tengah -->
+    <div class="center-panel">
+      <h1 class="brand">SIMON</h1>
+      
+      <div class="controls">
+        <div class="display">
+          <div id="count-screen">--</div>
+          <p>COUNT</p>
+        </div>
+        
+        <div class="btn-group">
+          <button class="btn-start" id="start-btn" onclick="startGame()"></button>
+          <p>START</p>
+        </div>
+        
+        <div class="btn-group">
+          <div class="strict-indicator" id="strict-led"></div>
+          <button class="btn-strict" id="strict-btn" onclick="toggleStrict()"></button>
+          <p>STRICT</p>
+        </div>
+      </div>
+      
+      <div class="power-switch">
+        <span>OFF</span>
+        <label class="switch">
+          <input type="checkbox" id="power-check" onchange="togglePower()">
+          <span class="slider"></span>
+        </label>
+        <span>ON</span>
+      </div>
+    </div>
+  </div>
+</div>
